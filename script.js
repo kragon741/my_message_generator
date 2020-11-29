@@ -9,3 +9,6 @@ const encouragement = {
   ability: ['heals', 'transforms', 'inspires', 'amazes', 'helps', 'dazzles', 'respects', 'improves', 'solves', 'saves'],
   action: ['show them what you are made of', 'make someones day', 'do something nice for yourself', 'pay it forward', 'be kind', 'make someone smile', 'change the world', 'save the day', 'share gratitude', 'take extra special care of yourself']
 }
+
+// Store the 'encouragement' in an array
+let personalEncouragement = [];
