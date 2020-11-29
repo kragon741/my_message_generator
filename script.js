@@ -15,3 +15,7 @@ const encouragement = {
 let personalEncouragement = [];
 
 // Iterate over the object
+for (let prop in encouragement) {
+  let randomId = generateRandomNumber(encouragement[prop].length);
+  
+}
