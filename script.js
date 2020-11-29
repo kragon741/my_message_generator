@@ -7,7 +7,7 @@ function generateRandomNumber(num) {
 // The encouragement object with three nested arrays
 const encouragement = {
   title: ['winner', 'sage', 'legend', 'hero', 'wizard', 'master empath', 'tornado', 'trailblazer', 'genius', 'heartthrob'],
-  ability: ['heals', 'transforms', 'inspires', 'amazes', 'helps', 'dazzles', 'respects', 'improves', 'solves', 'saves'],
+  ability: ['heals', 'transforms', 'inspires', 'comforts', 'helps', 'dazzles', 'respects', 'improves', 'solves', 'saves'],
   action: ['show them what you are made of', 'make someones day', 'do something nice for yourself', 'pay it forward', 'be kind', 'make someone smile', 'change the world', 'save the day', 'share gratitude', 'take extra special care of yourself']
 }
 
@@ -21,15 +21,22 @@ for (let prop in encouragement) {
   // use the object's properties to customize the message being added to personalEncouragement
   switch(prop) {
     case 'title':
-      personalEncouragement.push(`You are a "${encouragement[prop][randomId]}",`)
-      break
+      personalEncouragement.push(`Be happy! You are a "${encouragement[prop][randomId]}",`);
+      break;
     case 'ability':
-      personalEncouragement.push(` who "${encouragement[prop][randomId]}" peoples lives.`)
-      break
+      personalEncouragement.push(`who "${encouragement[prop][randomId]}" peoples lives!`);
+      break;
     case 'action':
-      personalEncouragement.push(`Get out there and ${encouragement[prop][randomId]}!`)
-      break
+      personalEncouragement.push(`\nGet out there and ${encouragement[prop][randomId]}.`);
+      break;
     default:
-      personalEncouragement.push('There is not enough info.')
+      personalEncouragement.push('There is not enough info.');
   }
 }
+
+function formatEncouragement(encourage) {
+  const formatted = personalEncouragement.join(' ');
+  console.log(formatted);
+}
+
+formatEncouragement(personalEncouragement);
