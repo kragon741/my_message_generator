@@ -21,7 +21,7 @@ for (let prop in encouragement) {
   // use the object's properties to customize the message being added to personalEncouragement
   switch(prop) {
     case 'title':
-      personalEncouragement.push(`Be happy! You are a "${encouragement[prop][randomId]}",`);
+      personalEncouragement.push(`Here's a reason to smile: You are a "${encouragement[prop][randomId]}",`);
       break;
     case 'ability':
       personalEncouragement.push(`who "${encouragement[prop][randomId]}" peoples lives!`);
