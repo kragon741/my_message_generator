@@ -17,5 +17,19 @@ let personalEncouragement = [];
 // Iterate over the object
 for (let prop in encouragement) {
   let randomId = generateRandomNumber(encouragement[prop].length);
-  
+
+  // use the object's properties to customize the message being added to personalEncouragement
+  switch(prop) {
+    case 'title':
+      personalEncouragement.push(`You are a "${encouragement[prop][randomId]}",`)
+      break
+    case 'ability':
+      personalEncouragement.push(` who "${encouragement[prop][randomId]}" peoples lives.`)
+      break
+    case 'action':
+      personalEncouragement.push(`Get out there and ${encouragement[prop][randomId]}!`)
+      break
+    default:
+      personalEncouragement.push('There is not enough info.')
+  }
 }
