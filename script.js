@@ -4,6 +4,7 @@ function generateRandomNumber(num) {
   return Math.floor(Math.random() * num);
 }
 
+// The encouragement object with three nested arrays
 const encouragement = {
   title: ['winner', 'sage', 'legend', 'hero', 'wizard', 'master empath', 'tornado', 'trailblazer', 'genius', 'heartthrob'],
   ability: ['heals', 'transforms', 'inspires', 'amazes', 'helps', 'dazzles', 'respects', 'improves', 'solves', 'saves'],
@@ -12,3 +13,5 @@ const encouragement = {
 
 // Store the 'encouragement' in an array
 let personalEncouragement = [];
+
+// Iterate over the object
